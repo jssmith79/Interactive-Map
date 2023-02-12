@@ -58,7 +58,7 @@ async function getFoursquare(business) {
 		}
 	}
 // reducing the number of results
-	let limit = 3
+	let limit = 6
 	let lat = myMap.coordinates[0]
 	let lon = myMap.coordinates[1]
 	let response = await fetch(`https://api.foursquare.com/v3/places/search?&query=${business}&limit=${limit}&ll=${lat}%2C${lon}`, options)
